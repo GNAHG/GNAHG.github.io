@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html class="client-js windows desktop ve-available landscape" lang=zh-Hans-CN dir=ltr><!--
+ Page saved with SingleFile 
+ url: https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED 
+ saved date: Fri Apr 21 2023 21:35:14 GMT+0800 (中国标准时间)
+-->
+<meta charset=utf-8>
+<title>展示实体/ED - Minecraft Wiki，最详细的我的世界百科</title>
+<style>
+    :root {
+        --sf-img-5: url("data:,")
+    }
+
+    body.skin-fandomdesktop .page-content {
+        overflow-x: visible
+    }
+
+    :root {
+        --fandom-text-color: #1e0c1b;
+        --fandom-text-color--secondary: #595358;
+        --fandom-text-color--rgb: 30, 12, 27;
+        --fandom-text-color--hover: #67295d;
+        --fandom-link-color: #9b004e;
+        --fandom-link-color--hover: #6d0037;
+        --fandom-link-color--rgb: 155, 0, 78;
+        --fandom-link-color--fadeout: rgba(155, 0, 78, .1);
+        --fandom-accent-color: #520044;
+        --fandom-accent-color--hover: #b80099;
+        --fandom-accent-label-color: #fff;
+        --fandom-border-color: #d6d0d5;
+        --fandom-secondary-button-color: #291927;
+        --fandom-secondary-button-color--hover: #684063;
+        --fandom-dropdown-background-color: #fff;
+        --fandom-notifications-background-color: #fff;
+        --fandom-notifications-read-card-background-color: #fff;
+        --fandom-notifications-unread-card-background-color: #eee6ec;
+        --fandom-notifications-footer-text-color: #291927;
+        --fandom-banner-notification-background-color: #fff;
+        --fandom-banner-notifications-close-icon: #595358;
+        --fandom-mobile-body-gradient: linear-gradient(180deg, #fff, #fff 55px, #f5f3f5 100vh, #f5f3f5);
+        --fandommobile-fanhub-button-background: #ffc500;
+        --fandommobile-fanhub-button-background--hover: #997600
+    }
+
+    :root {
+        --desktop-global-navigation-width: 66px
+    }
+
+    @-webkit-keyframes searchModalSlideIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px)
+        }
+    }
+
+    @keyframes searchModalSlideIn {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px)
+        }
+    }
+
+    @-webkit-keyframes searchOverlayFadeIn {
+        0% {
+            opacity: 0
+        }
+    }
+
+    @keyframes searchOverlayFadeIn {
+        0% {
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes fandom-spinner-rotator {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn)
+        }
+    }
+
+    @keyframes fandom-spinner-rotator {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn)
+        }
+    }
+
+    @-webkit-keyframes fandom-spinner-dash {
+        to {
+            stroke-dashoffset: 0
+        }
+    }
+
+    @keyframes fandom-spinner-dash {
+        to {
+            stroke-dashoffset: 0
+        }
+    }
+
+    :root {
+        --fandom-global-nav-background-color: #ffc500;
+        --fandom-global-nav-text-color: #1e0c1b;
+        --fandom-global-nav-link-color: #520044;
+        --fandom-global-nav-link-color--hover: #b80099;
+        --fandom-global-nav-icon-color: #fa005a;
+        --fandom-global-nav-icon-background-color: #f9edd8;
+        --fandom-global-nav-icon-background-color--hover: #f9edd8;
+        --fandom-global-nav-icon-background-color--active: #fff;
+        --fandom-global-nav-icon-border-color: #520044;
+        --fandom-global-nav-icon-border-color--hover: rgba(82, 0, 68, .5);
+        --fandom-global-nav-icon-border-color--active: #520044;
+        --fandom-global-nav-bottom-icon-color: #520044;
+        --fandom-global-nav-counter-background-color: #520044;
+        --fandom-global-nav-counter-label-color: #fff;
+        --fandom-global-nav-mobile-background-color: var(--fandom-global-nav-background-color);
+        --fandom-global-nav-mobile-logo: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MTggMTU1Ij48cGF0aCBmaWxsPSIjRkEwMDVBIiBkPSJNNDc4LjYgNzEuOTRMNDA3LjQyLjc4Yy0uMzY3LS4zNjctLjgzNS0uNjE4LTEuMzQ0LS43Mi0uNTEtLjEwMS0xLjAzOC0uMDUtMS41MTguMTQ4cy0uODkxLjUzMy0xLjE4MS45NjRjLS4yOS40MzEtLjQ0NS45MzktLjQ0NyAxLjQ1OHY1OS44NGwtMjEuNTYtMjEuNTRjLS4zNjgtLjM2OC0uODM3LS42MTgtMS4zNDctLjcyLS41MS0uMTAyLTEuMDM5LS4wNS0xLjUyLjE1LS40OC4xOTktLjg5MS41MzYtMS4xOC45NjgtLjI4OS40MzMtLjQ0My45NDItLjQ0MyAxLjQ2MnY2MS43OWMtLjAwNCAxLjkzNS4zNzQgMy44NTIgMS4xMTQgNS42NDEuNzM5IDEuNzg4IDEuODI2IDMuNDEyIDMuMTk2IDQuNzc5bDI4LjA1IDI4YzIuNzYzIDIuNzUgNi41MDIgNC4yOTUgMTAuNCA0LjNoMjAuNTNjMy44OTYtLjAwMiA3LjYzMi0xLjU0OCAxMC4zOS00LjNsMjguMDUtMjhjMS4zNjUtMS4zNjQgMi40NDgtMi45ODMgMy4xODYtNC43NjZzMS4xMTYtMy42OTQgMS4xMTQtNS42MjRWODIuMzRjLjAwMi0xLjkzMi0uMzc4LTMuODQ1LTEuMTE4LTUuNjMtLjczOS0xLjc4NS0xLjgyNC0zLjQwNi0zLjE5Mi00Ljc3eiIvPjxwYXRoIGZpbGw9IiNGRkM1MDAiIGQ9Ik00NTYuODkgOThjLS4wMDMgMS4xNjYtLjQ2NyAyLjI4NC0xLjI5IDMuMTFMNDMzIDEyMy43OWMtLjQwOS40MTMtLjg5Ni43NC0xLjQzMi45NjQtLjUzNy4yMjMtMS4xMTIuMzM5LTEuNjkzLjMzOXMtMS4xNTctLjExNi0xLjY5My0uMzM5Yy0uNTM2LS4yMjQtMS4wMjMtLjU1MS0xLjQzMi0uOTY0bC0yMi41NS0yMi43MWMtLjgyLS44MTctMS4yODctMS45MjMtMS4zLTMuMDh2LTguNjZjLjAwMS0uNTguMTE2LTEuMTU0LjMzOS0xLjY5LjIyMy0uNTM1LjU1LTEuMDIxLjk2MS0xLjQzbDguMTItOC4xMmMuODI4LS44MjYgMS45NS0xLjI5IDMuMTItMS4yOSAxLjE3IDAgMi4yOTEuNDY0IDMuMTIgMS4yOWwxMS4zNSAxMS4zNiAxMS4zMy0xMS4zNmMuODI4LS44MjYgMS45NS0xLjI5IDMuMTItMS4yOSAxLjE3IDAgMi4yOTEuNDY0IDMuMTIgMS4yOWw4LjExIDguMTJjLjQxMS40MDkuNzM4Ljg5NS45NjEgMS40My4yMjMuNTM2LjMzOCAxLjExLjMzOSAxLjY5Vjk4eiIvPjxwYXRoIGZpbGw9IiM1MjAwNDQiIGQ9Ik01ODYuMTcgNTYuMjljLTUuODEuMDAyLTExLjQ0OSAxLjk2OC0xNiA1LjU4bC0zLjYzIDNjLS41NTEuNDI3LTEuMjI4LjY2LTEuOTI1LjY2LS42OTcgMC0xLjM3NC0uMjMzLTEuOTI1LS42NmwtMy42NC0zYy00LjU1MS0zLjYxMi0xMC4xOS01LjU3OC0xNi01LjU4aC0uNjdjLTguNzUgMC0xNi40MyA0Ljc4LTIwLjcgMTMtLjA4NS4xNjgtLjIyNC4zMDMtLjM5NC4zODMtLjE3MS4wOC0uMzYzLjEtLjU0Ni4wNTctLjE4NC0uMDQzLS4zNDctLjE0Ni0uNDY1LS4yOTMtLjExOC0uMTQ3LS4xODMtLjMyOS0uMTg1LS41MTd2LTkuMjFjMC0uNzM1LS4yOTItMS40NC0uODExLTEuOTU5LS41Mi0uNTItMS4yMjQtLjgxMS0xLjk1OS0uODExaC0xOS4yM2MtLjczOC4wMDMtMS40NDUuMjk4LTEuOTY2LjgyLS41MjEuNTI0LS44MTQgMS4yMzItLjgxNCAxLjk3djc1LjljMCAuNzQ1LjI5NiAxLjQ2LjgyMyAxLjk4Ny41MjcuNTI3IDEuMjQyLjgyMyAxLjk4Ny44MjNoMTkuMTZjLjc0NSAwIDEuNDYtLjI5NiAxLjk4Ny0uODIzLjUyNy0uNTI3LjgyMy0xLjI0Mi44MjMtMS45ODdWOTAuMzVjLS4wMDEtMS4yNDUuMjQzLTIuNDc5LjcxOS0zLjYzLjQ3Ni0xLjE1IDEuMTc0LTIuMTk2IDIuMDU1LTMuMDc2Ljg4LS44OCAxLjkyNi0xLjU4IDMuMDc3LTIuMDU1IDEuMTUtLjQ3NiAyLjM4NC0uNzIgMy42MjktLjcxOWg0Ljg1YzEuMjQ2LS4wMDEgMi40OC4yNDMgMy42MzEuNzE5IDEuMTUxLjQ3NiAyLjE5OCAxLjE3NCAzLjA3OSAyLjA1NC44ODEuODggMS41OCAxLjkyNiAyLjA1OCAzLjA3Ny40NzcgMS4xNS43MjIgMi4zODQuNzIyIDMuNjNsLjA2IDQ1LjI5YzAgLjM2OS4wNzMuNzMzLjIxNCAxLjA3NC4xNDEuMzQuMzQ5LjY0OS42MS45MDkuMjYxLjI2MS41NzEuNDY3LjkxMi42MDcuMzQuMTQuNzA2LjIxMSAxLjA3NC4yMWgxOS4xNmMuNzQ1IDAgMS40Ni0uMjk2IDEuOTg3LS44MjMuNTI3LS41MjcuODIzLTEuMjQyLjgyMy0xLjk4N1Y5MC4zNWMwLTIuNTE0Ljk5OS00LjkyNSAyLjc3Ny02LjcwMyAxLjc3OC0xLjc3OCA0LjE4OS0yLjc3NyA2LjcwMy0yLjc3N2g0Ljg2YzEuMjQ1LS4wMDEgMi40NzkuMjQzIDMuNjI5LjcxOSAxLjE1MS40NzYgMi4xOTcgMS4xNzQgMy4wNzcgMi4wNTUuODgxLjg4IDEuNTc5IDEuOTI2IDIuMDU1IDMuMDc3LjQ3NiAxLjE1LjcyIDIuMzg0LjcxOSAzLjYyOWwuMDcgNDUuMjljMCAuNzQzLjI5NSAxLjQ1NS44MiAxLjk4LjUyNS41MjUgMS4yMzcuODIgMS45OC44MmgxOS4xN2MuMzY5IDAgLjczNC0uMDczIDEuMDc0LS4yMTQuMzQtLjE0MS42NDktLjM0OS45MS0uNjEuMjYtLjI2MS40NjYtLjU3MS42MDYtLjkxMS4xNC0uMzQxLjIxMS0uNzA2LjIxLTEuMDc1Vjg4Yy4wNTMtNC4xNC0uNzE1LTguMjQ4LTIuMjYxLTEyLjA4OC0xLjU0NS0zLjg0LTMuODM3LTcuMzM3LTYuNzQyLTEwLjI4NnMtNi4zNjctNS4yOTItMTAuMTg0LTYuODk1Yy0zLjgxNi0xLjYwMi03LjkxMy0yLjQzMi0xMi4wNTMtMi40NDF6TTM2MCAyNy40OGwtMTcuOC0xNy44Yy0uMzgxLS4zODUtLjg2OS0uNjQ4LTEuNC0uNzU1LS41MzEtLjEwOC0xLjA4Mi0uMDU0LTEuNTgzLjE1My0uNTAxLjIwNy0uOTI4LjU1OC0xLjIyOSAxLjAwOS0uMy40NS0uNDYuOTgxLS40NTggMS41MjN2NDguNDhjLS4wMDEuMjktLjA4LjU3Ni0uMjMxLjgyNC0uMTUuMjUtLjM2NS40NTItLjYyMi41ODgtLjI1Ny4xMzYtLjU0Ni4xOTktLjgzNi4xODMtLjI5LS4wMTctLjU3MS0uMTExLS44MTEtLjI3NS00LjQxOS0zLTkuNjYtNC41NTQtMTUtNC40NWgtMTEuMTljLTQuMTUxLS4wMDEtOC4yNjEuODE1LTEyLjA5NiAyLjQwMi0zLjgzNSAxLjU4OC03LjMyIDMuOTE1LTEwLjI1NSA2Ljg1LTIuOTM1IDIuOTM0LTUuMjY0IDYuNDE4LTYuODUzIDEwLjI1My0xLjU4OCAzLjgzNC0yLjQwNiA3Ljk0NC0yLjQwNiAxMi4wOTV2MTguMzhjMCA0LjE1MS44MTggOC4yNjIgMi40MDYgMTIuMDk3IDEuNTg5IDMuODM1IDMuOTE3IDcuMzE5IDYuODUyIDEwLjI1NSAyLjkzNiAyLjkzNSA2LjQyIDUuMjYzIDEwLjI1NSA2Ljg1MiAzLjgzNSAxLjU4OCA3Ljk0NiAyLjQwNiAxMi4wOTcgMi40MDZoNi4yMmM4Ljc1IDAgMTYuNDMtNC43OCAyMC43LTEzIC4wODUtLjE2OC4yMjQtLjMwMy4zOTQtLjM4My4xNzEtLjA3OS4zNjMtLjEuNTQ2LS4wNTcuMTg0LjA0My4zNDcuMTQ2LjQ2NS4yOTMuMTE4LjE0Ny4xODMuMzI5LjE4NS41MTd2OS44NGMwIC4zNjQuMDcyLjcyNC4yMTEgMS4wNi4xMzkuMzM2LjM0My42NDEuNi44OTkuMjU4LjI1Ny41NjMuNDYxLjg5OS42LjMzNi4xMzkuNjk2LjIxMSAxLjA2LjIxMWgxOS4yM2MuNzM2LS4wMDMgMS40NDItLjI5NiAxLjk2My0uODE3LjUyMS0uNTIxLjgxNC0xLjIyNy44MTctMS45NjNWMzIuNjFjLS4wMDMtMS45MjQtLjc2OS0zLjc3LTIuMTMtNS4xM3ptLTU4LjA5IDc4VjkwYy4wMDMtMi41MTMgMS4wMDItNC45MjMgMi43OC02LjcgMS43NzctMS43NzggNC4xODctMi43NzcgNi43LTIuNzhoMTUuOTNjMi41MTQgMCA0LjkyNi45OTkgNi43MDMgMi43NzcgMS43NzggMS43NzggMi43NzcgNC4xODkgMi43NzcgNi43MDN2MTUuNDhjLjAwMSAxLjI0Ni0uMjQzIDIuNDgtLjcxOSAzLjYzMS0uNDc2IDEuMTUxLTEuMTc0IDIuMTk3LTIuMDU0IDMuMDc5LS44ODEuODgxLTEuOTI2IDEuNTgtMy4wNzcgMi4wNTctMS4xNTEuNDc3LTIuMzg0LjcyMy0zLjYzLjcyM2gtMTUuOTNjLTIuNTEzLS4wMDMtNC45MjMtMS4wMDItNi43LTIuNzgtMS43NzgtMS43NzctMi43NzctNC4xODctMi43OC02Ljd2LS4wMXpNMTYyLjQyIDU3SDE0My4yYy0uNzM1IDAtMS40MzkuMjkyLTEuOTU5LjgxMS0uNTE5LjUyLS44MTEgMS4yMjQtLjgxMSAxLjk1OXY5LjgzYy0uMDAyLjE4OC0uMDY3LjM3LS4xODUuNTE3LS4xMTcuMTQ3LS4yODEuMjUtLjQ2NS4yOTMtLjE4My4wNDMtLjM3NS4wMjItLjU0Ni0uMDU3LS4xNy0uMDgtLjMwOS0uMjE1LS4zOTQtLjM4My00LjI3LTguMi0xMi0xMy0yMC43LTEzaC02LjIzYy04LjM4MSAwLTE2LjQxOCAzLjMzLTIyLjM0NCA5LjI1NS01LjkyNyA1LjkyNy05LjI1NiAxMy45NjQtOS4yNTYgMjIuMzQ1djE4LjM4Yy0uMDAxIDQuMTUxLjgxNSA4LjI2MSAyLjQwMyAxMi4wOTYgMS41ODcgMy44MzUgMy45MTUgNy4zMiA2Ljg0OSAxMC4yNTUgMi45MzQgMi45MzUgNi40MTggNS4yNjQgMTAuMjUzIDYuODUzIDMuODM0IDEuNTg4IDcuOTQ0IDIuNDA2IDEyLjA5NSAyLjQwNmg2LjIzYzguNzQgMCAxNi40My00Ljc4IDIwLjctMTMgLjA4NS0uMTY4LjIyNC0uMzAzLjM5NC0uMzgzLjE3MS0uMDc5LjM2My0uMS41NDYtLjA1Ny4xODQuMDQzLjM0OC4xNDYuNDY1LjI5My4xMTguMTQ3LjE4My4zMjkuMTg1LjUxN3Y5Ljg0YzAgLjczNS4yOTIgMS40MzkuODExIDEuOTU5LjUyLjUxOSAxLjIyNC44MTEgMS45NTkuODExaDE5LjIyYy43MzcgMCAxLjQ0NC0uMjkzIDEuOTY2LS44MTQuNTIxLS41MjIuODE0LTEuMjI5LjgxNC0xLjk2NnYtNzZjLS4wMDEtLjM2NC0uMDc0LS43MjQtLjIxNS0xLjA2LS4xNC0uMzM1LS4zNDUtLjY0LS42MDMtLjg5NnMtLjU2NS0uNDU5LS45MDEtLjU5N2MtLjMzNy0uMTM4LS42OTctLjIwOC0xLjA2MS0uMjA3em0tMjIuNTQgNDguNTNjMCAxLjI0Ni0uMjQ1IDIuNDgtLjcyMiAzLjYzMi0uNDc3IDEuMTUxLTEuMTc2IDIuMTk3LTIuMDU3IDMuMDc4LS44ODIuODgyLTEuOTI4IDEuNTgxLTMuMDc5IDIuMDU4LTEuMTUyLjQ3Ny0yLjM4Ni43MjItMy42MzIuNzIyaC0xNS45MmMtMi41MTcgMC00LjkzMS0xLTYuNzEtMi43OC0xLjc4LTEuNzc5LTIuNzgtNC4xOTMtMi43OC02LjcxVjkwYy4wMDMtMi41MTUgMS4wMDQtNC45MjYgMi43ODMtNi43MDQgMS43OC0xLjc3OCA0LjE5Mi0yLjc3NiA2LjcwNy0yLjc3NmgxNS45MmMyLjUxNSAwIDQuOTI4Ljk5OSA2LjcwNyAyLjc3NiAxLjc3OSAxLjc3OCAyLjc4IDQuMTg5IDIuNzgzIDYuNzA0djE1LjUzek0yMzEuNzggNTdIMjMwYy04Ljc0IDAtMTYuNDMgNC43Ny0yMC43IDEzLS4wODUuMTY4LS4yMjQuMzAzLS4zOTQuMzgzLS4xNzEuMDgtLjM2My4xLS41NDYuMDU3LS4xODQtLjA0My0uMzQ4LS4xNDYtLjQ2NS0uMjkzLS4xMTgtLjE0Ny0uMTgzLS4zMjktLjE4NS0uNTE3di05LjljLS4wMTEtLjcyOC0uMzA3LTEuNDIyLS44MjUtMS45MzMtLjUxOS0uNTEtMS4yMTctLjc5Ny0xLjk0NS0uNzk3aC0xOS4yMmMtLjM2NS0uMDAxLS43MjguMDctMS4wNjUuMjA5LS4zMzguMTQtLjY0NS4zNDQtLjkwNC42MDItLjI1OC4yNTktLjQ2My41NjYtLjYwMi45MDQtLjEzOS4zMzctLjIxLjctLjIwOSAxLjA2NXY3NS45MWMwIC43NDMuMjk1IDEuNDU1LjgyIDEuOTguNTI1LjUyNSAxLjIzNy44MiAxLjk4LjgyaDE5LjE3Yy4zNjggMCAuNzMyLS4wNzIgMS4wNzEtLjIxMy4zNC0uMTQxLjY0OS0uMzQ3LjkwOS0uNjA3cy40NjYtLjU2OS42MDctLjkwOGMuMTQxLS4zNC4yMTMtLjcwNC4yMTMtMS4wNzJsLjA3LTQ0LjY5YzAtMi41MTQuOTk5LTQuOTI1IDIuNzc3LTYuNzAzIDEuNzc3LTEuNzc4IDQuMTg5LTIuNzc3IDYuNzAzLTIuNzc3aDExLjhjMi41MTMuMDAzIDQuOTIzIDEuMDAyIDYuNyAyLjc4IDEuNzc4IDEuNzc3IDIuNzc3IDQuMTg3IDIuNzggNi43bC4wNiA0NC42NGMuMDAzLjc0NC4zIDEuNDU2LjgyNyAxLjk4MS41MjYuNTI0IDEuMjM5LjgxOSAxLjk4My44MTloMTkuMTZjLjM2OS4wMDEuNzM0LS4wNyAxLjA3NS0uMjEuMzQtLjE0LjY1LS4zNDYuOTExLS42MDcuMjYxLS4yNi40NjktLjU2OS42MS0uOTA5LjE0MS0uMzQxLjIxNC0uNzA1LjIxNC0xLjA3NFY4OC41NmMtLjAxMS04LjM3NC0zLjM0NS0xNi40MDEtOS4yNy0yMi4zMTlDMjQ4LjE4NSA2MC4zMjQgMjQwLjE1NCA1NyAyMzEuNzggNTd6TTE2LjIzIDQwLjM0Yy00LjMwNS4wMDMtOC40MzQgMS43MTUtMTEuNDc3IDQuNzZDMS43MSA0OC4xNDUgMCA1Mi4yNzUgMCA1Ni41OHY3My4xNWMwIDIuNTkxIDEuMDI5IDUuMDc3IDIuODYgNi45MWwxNi45MSAxNi45Yy40MS40MDkuOTMxLjY4OCAxLjUuOC41NjcuMTEzIDEuMTU2LjA1NSAxLjY5LS4xNjYuNTM2LS4yMjIuOTkzLS41OTcgMS4zMTUtMS4wNzguMzIyLS40ODEuNDk0LTEuMDQ3LjQ5NS0xLjYyNlYxMTRjMC0uNzI0LjI4OC0xLjQxOC44LTEuOTNzMS4yMDYtLjggMS45My0uOEg1NmMuNzczIDAgMS41MjYtLjI0NiAyLjE1LS43MDMuNjI0LS40NTYgMS4wODYtMS4xIDEuMzItMS44MzdsNS4zNy0xN2MuMTQ2LS40Ni4xODItLjk0Ny4xMDQtMS40MjMtLjA3Ny0uNDc2LS4yNjYtLjkyOC0uNTUtMS4zMTctLjI4NS0uMzktLjY1Ny0uNzA3LTEuMDg3LS45MjYtLjQzLS4yMTktLjkwNS0uMzMzLTEuMzg3LS4zMzRIMjcuNWMtLjM1OS4wMDEtLjcxNS0uMDY4LTEuMDQ2LS4yMDUtLjMzMi0uMTM3LS42MzQtLjMzOC0uODg3LS41OTItLjI1NC0uMjUzLS40NTUtLjU1NS0uNTkyLS44ODctLjEzNy0uMzMyLS4yMDYtLjY4Ny0uMjA1LTEuMDQ2VjY2LjQ1YzAtLjM1OC4wNy0uNzEzLjIwOC0xLjA0My4xMzctLjMzLjMzOS0uNjMxLjU5Mi0uODg0LjI1NC0uMjUzLjU1NS0uNDUzLjg4Ni0uNTg5LjMzMS0uMTM2LjY4Ni0uMjA1IDEuMDQ0LS4yMDRoNDMuNzRjLjc3IDAgMS41MjEtLjI0NSAyLjE0My0uNy42MjItLjQ1NSAxLjA4NC0xLjA5NiAxLjMxNy0xLjgzbDUuNDEtMTYuODZjLjE0Ni0uNDYuMTgyLS45NDcuMTA0LTEuNDIzLS4wNzctLjQ3Ni0uMjY2LS45MjgtLjU1LTEuMzE3LS4yODUtLjM5LS42NTctLjcwNy0xLjA4Ny0uOTI2LS40My0uMjE5LS45MDUtLjMzMy0xLjM4Ny0uMzM0SDE2LjIzeiIvPjwvc3ZnPg==);
+        --fandom-global-nav-mobile-logo-background: #f5f3f5;
+        --fandom-global-nav-mobile-community-sticky-bar-background-color: var(--theme-sticky-nav-background-color);
+        --fandom-global-nav-mobile-community-sticky-bar-color: var(--theme-sticky-nav-text-color);
+        --fandom-global-nav-mobile-community-sticky-bar-color--hover: var(--theme-sticky-nav-text-color--hover);
+        --fandom-global-nav-mobile-community-bar-background-color: var(--theme-sticky-nav-background-color);
+        --fandom-global-nav-mobile-community-bar-color: var(--theme-sticky-nav-text-color);
+        --fandom-global-nav-mobile-community-bar-color--hover: var(--theme-sticky-nav-text-color--hover);
+        --fandom-global-nav-mobile-community-bottom-border-color: #d6d0d5;
+        --fandom-global-nav-search-active-link-background-color: #fff;
+        --fandom-global-nav-search-active-link-border-color: #520044;
+        --fandom-global-nav-mobile-logo-separator-color: transparent;
+        --fandom-global-nav-separator-color: rgba(30, 12, 27, .25);
+        --fandom-global-nav-gp-legacy-logo: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTggMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4IDlDMTggOS40NzI1IDE3Ljc3NSA5LjkzMzc1IDE3LjMyNSAxMC4yMTVDMTYuODk3NSAxMC40OTYyIDE2LjY1IDEwLjk1NzUgMTYuNjUgMTEuNDQxM0MxNi42NSAxMS42NjYzIDE2LjcwNjMgMTEuODkxMyAxNi44MTg4IDEyLjEwNUMxNi45MzEzIDEyLjMzIDE2Ljk4NzUgMTIuNTU1IDE2Ljk4NzUgMTIuNzhDMTYuOTg3NSAxMy41MTEyIDE2LjQxMzcgMTQuMTg2MyAxNS42MDM3IDE0LjIyQzE0Ljg1IDE0LjI1MzggMTQuMjUzOCAxNC44NSAxNC4yMiAxNS42MDM3QzE0LjE4NjMgMTYuNDEzNyAxMy41MTEyIDE2Ljk4NzUgMTIuNzggMTYuOTg3NUMxMi41NTUgMTYuOTg3NSAxMi4zMyAxNi45MzEzIDEyLjEwNSAxNi44MTg4QzExLjg5MTMgMTYuNzA2MyAxMS42NjYzIDE2LjY1IDExLjQ0MTMgMTYuNjVDMTAuOTU3NSAxNi42NSAxMC40OTYyIDE2Ljg5NzUgMTAuMjE1IDE3LjMyNUM5LjkzMzc1IDE3Ljc3NSA5LjQ3MjUgMTggOSAxOEM4LjUyNzUgMTggOC4wNjYyNSAxNy43NzUgNy43ODUgMTcuMzI1QzcuNTAzNzUgMTYuODk3NSA3LjA0MjUgMTYuNjUgNi41NTg3NSAxNi42NUM2LjMzMzc1IDE2LjY1IDYuMTA4NzUgMTYuNzA2MyA1Ljg5NSAxNi44MTg4QzUuNjcgMTYuOTMxMyA1LjQ0NSAxNi45ODc1IDUuMjIgMTYuOTg3NUM0LjQ4ODc1IDE2Ljk4NzUgMy44MTM3NSAxNi40MTM3IDMuNzggMTUuNjAzN0MzLjc0NjI1IDE0Ljg1IDMuMTUgMTQuMjUzOCAyLjM5NjI1IDE0LjIyQzEuNTg2MjUgMTQuMTg2MyAxLjAxMjUgMTMuNTExMiAxLjAxMjUgMTIuNzhDMS4wMTI1IDEyLjU1NSAxLjA2ODc1IDEyLjMzIDEuMTgxMjUgMTIuMTA1QzEuMjkzNzUgMTEuODkxMyAxLjM1IDExLjY2NjMgMS4zNSAxMS40NDEzQzEuMzUgMTAuOTU3NSAxLjEwMjUgMTAuNDk2MiAwLjY3NSAxMC4yMTVDMC4yMjUgOS45MzM3NSAwIDkuNDcyNSAwIDlDMCA4LjUyNzUgMC4yMjUgOC4wNjYyNSAwLjY3NSA3Ljc4NUMxLjEwMjUgNy41MDM3NSAxLjM1IDcuMDQyNSAxLjM1IDYuNTU4NzVDMS4zNSA2LjMzMzc1IDEuMjkzNzUgNi4xMDg3NSAxLjE4MTI1IDUuODk1QzEuMDY4NzUgNS42NyAxLjAxMjUgNS40NDUgMS4wMTI1IDUuMjJDMS4wMTI1IDQuNDg4NzUgMS41ODYyNSAzLjgxMzc1IDIuMzk2MjUgMy43OEMzLjE1IDMuNzQ2MjUgMy43NDYyNSAzLjE1IDMuNzggMi4zOTYyNUMzLjgxMzc1IDEuNTg2MjUgNC40ODg3NSAxLjAxMjUgNS4yMiAxLjAxMjVDNS40NDUgMS4wMTI1IDUuNjcgMS4wNjg3NSA1Ljg5NSAxLjE4MTI1QzYuMTA4NzUgMS4yOTM3NSA2LjMzMzc1IDEuMzUgNi41NTg3NSAxLjM1QzcuMDQyNSAxLjM1IDcuNTAzNzUgMS4xMDI1IDcuNzg1IDAuNjc1QzguMDY2MjUgMC4yMjUgOC41Mjc1IDAgOSAwQzkuNDcyNSAwIDkuOTMzNzUgMC4yMjUgMTAuMjE1IDAuNjc1QzEwLjYyIDEuMzA1IDExLjQ0MTMgMS41MyAxMi4xMDUgMS4xODEyNUMxMi4zMyAxLjA2ODc1IDEyLjU1NSAxLjAxMjUgMTIuNzggMS4wMTI1QzEzLjUxMTIgMS4wMTI1IDE0LjE4NjMgMS41ODYyNSAxNC4yMiAyLjM5NjI1QzE0LjI1MzggMy4xNSAxNC44NSAzLjc0NjI1IDE1LjYwMzcgMy43OEMxNi40MTM3IDMuODEzNzUgMTYuOTg3NSA0LjQ4ODc1IDE2Ljk4NzUgNS4yMkMxNi45ODc1IDUuNDQ1IDE2LjkzMTMgNS42NyAxNi44MTg4IDUuODk1QzE2LjcwNjMgNi4xMDg3NSAxNi42NSA2LjMzMzc1IDE2LjY1IDYuNTU4NzVDMTYuNjUgNy4wNDI1IDE2Ljg5NzUgNy41MDM3NSAxNy4zMjUgNy43ODVDMTcuNzc1IDguMDY2MjUgMTggOC41Mjc1IDE4IDlaIiBmaWxsPSIjRjU4MTIwIi8+PHBhdGggZD0iTTQgNy40OTIyN0w4LjU4NTk3IDNWNC40NTY5NUw0LjYxNjM5IDcuNDQzNzFMNi41MTQ4OSAxMi40NDU5SDYuMTk0MzZMNCA3LjQ5MjI3WiIgZmlsbD0iIzBFMTkxQSIvPjxwYXRoIGQ9Ik00Ljk4NjA4IDcuNDkxOUwxMC43MDYyIDMuMjkxMDJMMTAuNTU4MyA0LjYwMjI3TDYuNTY0MDUgNi45ODE5NkwxMS42OTI0IDQuMjEzNzVMMTEuNDk1MiA1LjUyNTAxTDcuMzc3NjkgNy4wNzkwOUwxMi41NTU0IDUuNDAzNkwxMi4yMTAyIDYuNTQ0ODhMNi4yOTI4NCA4LjAyNjExTDQuOTg2MDggNy40OTE5WiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik02LjIxODc1IDguMjkzNDNMOC4wNDMyNyAxMy45OTk4TDEyLjcyNzkgMTEuNjQ0NEwxMi45OTkxIDYuNjY2NUw2LjIxODc1IDguMjkzNDNaTTExLjM3MTggMTEuNTQ3M0MxMS4xNDk5IDExLjc0MTYgMTAuODc4NyAxMS43OTAxIDEwLjczMDggMTEuOTM1OEMxMC42MzIxIDEyLjAzMjkgMTAuNTgyOCAxMi4xNzg2IDEwLjU4MjggMTIuMTc4NkMxMC40MTAyIDExLjkzNTggMTAuMjM3NiAxMS44NjMgMTAuMDY1IDExLjgzODdDOS44Njc4IDExLjgxNDQgOS41NDcyOCAxMS45MTE1IDkuMDU0MTYgMTEuNTcxNkM4LjcwODk4IDExLjM1MyA4LjYzNTAxIDExLjAxMzEgOC42MzUwMSAxMC44MTg4VjEwLjc5NDVDOC42MzUwMSAxMC43NzAzIDguNjM1MDEgMTAuNzcwMyA4LjYzNTAxIDEwLjc0NkM4LjYzNTAxIDEwLjcyMTcgOC42MzUwMSAxMC42OTc0IDguNjM1MDEgMTAuNjczMUM4LjY1OTY3IDEwLjQ3ODkgOC43ODI5NSAxMC4yODQ2IDkuMDc4ODIgMTAuMTE0NkM5LjA3ODgyIDEwLjExNDYgOC45MzA4OCAxMC40MzAzIDkuMTc3NDQgMTAuNzIxN0M5LjMyNTM3IDEwLjg5MTcgOS41OTY1OSAxMC45NDAyIDkuNzY5MTggMTAuNzcwM0M5Ljg0MzE0IDEwLjY5NzQgOS44OTI0NiAxMC41NzYgOS44OTI0NiAxMC40Nzg5QzkuOTE3MTEgMTAuMjYwMyA5Ljg2NzggMTAuMDY2MSA5LjY3MDU1IDkuOTQ0NjVDOS4zNTAwMyA5Ljc1MDM5IDkuMjUxNDEgOS40MzQ3MiA5LjM5OTM0IDkuMjE2MTdDOS4zOTkzNCA5LjIxNjE3IDkuNTIyNjIgOS41ODA0MSA5Ljc0NDUyIDkuNTMxODVDOS45MTcxMSA5LjQ4MzI4IDkuOTE3MTEgOS4zMTMzIDkuODQzMTQgOS4yNDA0NUM5Ljc2OTE4IDkuMTY3NjEgOS4zMDA3MiA4LjY1NzY3IDkuODE4NDkgOC4xNzIwMkM5LjgxODQ5IDguMTcyMDIgMTAuMTE0NCA3LjkwNDkxIDEwLjUwODggNy44MzIwN0MxMC41MzM1IDcuODMyMDcgMTAuNTMzNSA3LjgzMjA3IDEwLjU1ODIgNy44MzIwN0MxMC4zMzYzIDcuOTA0OTEgMTAuMDg5NyA4LjA5OTE3IDEwLjA0MDQgOC4zNDJDMTAuMDQwNCA4LjM0MiAxMC4wNDA0IDguMzQyIDEwLjA0MDQgOC4zNjYyOEM5Ljk5MTA4IDguNjMzMzkgMTAuMTE0NCA4Ljg3NjIyIDEwLjMxMTYgOS4wNzA0OEMxMC40NTk1IDkuMjE2MTcgMTAuNjMyMSA5LjMzNzU4IDEwLjczMDggOS41ODA0MUMxMC42MzIxIDkuNTU2MTMgMTAuNTU4MiA5LjYwNDY5IDEwLjUwODggOS42Nzc1NEMxMC40NTk1IDkuNzUwMzkgMTAuNDM0OSA5Ljg3MTggMTAuNTA4OCA5Ljk2ODkzQzEwLjU1ODIgMTAuMDE3NSAxMC42MDc1IDEwLjA2NjEgMTAuNjgxNCAxMC4wNjYxQzEwLjcwNjEgMTAuMDY2MSAxMC43MzA4IDEwLjA2NjEgMTAuNzU1NCAxMC4wNDE4QzEwLjc1NTQgMTAuMDQxOCAxMC43ODAxIDEwLjA0MTggMTAuNzgwMSAxMC4wMTc1QzEwLjg1NCA5Ljk2ODkzIDEwLjkwMzMgOS44NDc1MiAxMC44NTQgOS43NzQ2N0MxMC45MjggOS43OTg5NSAxMC45NzczIDkuOTY4OTMgMTAuOTc3MyAxMC4wNDE4QzEwLjk3NzMgMTAuMTM4OSAxMC45NTI3IDEwLjIxMTggMTAuOTI4IDEwLjMwODlDMTAuOTAzMyAxMC4zNTc1IDEwLjg1NCAxMC40MzAzIDEwLjg1NCAxMC41MDMxQzEwLjgyOTQgMTAuNTc2IDEwLjgyOTQgMTAuNjI0NiAxMC44Mjk0IDEwLjY5NzRDMTAuODI5NCAxMC43NzAzIDEwLjg1NCAxMC44NDMxIDEwLjkwMzMgMTAuODkxN0MxMS4wNTEzIDExLjAzNzQgMTEuMjQ4NSAxMC44MTg4IDExLjI5NzggMTAuNjczMUMxMS4zNDcxIDEwLjQ3ODkgMTEuMjk3OCAxMC4yODQ2IDExLjE0OTkgMTAuMTM4OUMxMS4xNDk5IDEwLjEzODkgMTEuMzcxOCAxMC4yMTE4IDExLjU5MzcgMTAuNjAwM0MxMS43MTcgMTAuOTE2IDExLjU5MzcgMTEuMzUzIDExLjM3MTggMTEuNTQ3M1oiIGZpbGw9IiMwRTE5MUEiLz48L3N2Zz4=);
+        --fandom-global-nav-border-top-width: 0;
+        --fandom-global-nav-overflow-shadow-color: rgba(30, 12, 27, .3)
+    }
+
+    @media screen {
+        .mw-body-content:after {
+            clear: both;
+            content: "";
+            display: block
+        }
+    }
+
+    a,
+    body,
+    code,
+    div,
+    dl,
+    dt,
+    html,
+    i,
+    li,
+    p,
+    samp,
+    span,
+    ul {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline
+    }
+
+    html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    *,
+    :after,
+    :before {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit
+    }
+
+    ul {
+        list-style: none
+    }
+
+    @-webkit-keyframes move-in {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px)
+        }
+    }
+
+    @keyframes move-in {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(30px);
+            transform: translateY(30px)
+        }
+    }
+
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+            pointer-events: none
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            pointer-events: none
+        }
+    }
+
+    @-webkit-keyframes fadeInIcon {
+        0% {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fadeInIcon {
+        0% {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes fade-in-modal {
+        0% {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade-in-modal {
+        0% {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes pulsating-dot-main {
+        0% {
+            -webkit-transform: translate(-50%, -50%) scale(.95);
+            transform: translate(-50%, -50%) scale(.95)
+        }
+
+        20% {
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        to {
+            -webkit-transform: translate(-50%, -50%) scale(.95);
+            transform: translate(-50%, -50%) scale(.95)
+        }
+    }
+
+    @keyframes pulsating-dot-main {
+        0% {
+            -webkit-transform: translate(-50%, -50%) scale(.95);
+            transform: translate(-50%, -50%) scale(.95)
+        }
+
+        20% {
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        to {
+            -webkit-transform: translate(-50%, -50%) scale(.95);
+            transform: translate(-50%, -50%) scale(.95)
+        }
+    }
+
+    @-webkit-keyframes pulsating-dot-shadow {
+        0% {
+            -webkit-transform: translate(-50%, -50%) scale(.6);
+            transform: translate(-50%, -50%) scale(.6)
+        }
+
+        30% {
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        to {
+            -webkit-transform: translate(-50%, -50%) scale(.6);
+            transform: translate(-50%, -50%) scale(.6)
+        }
+    }
+
+    @keyframes pulsating-dot-shadow {
+        0% {
+            -webkit-transform: translate(-50%, -50%) scale(.6);
+            transform: translate(-50%, -50%) scale(.6)
+        }
+
+        30% {
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        to {
+            -webkit-transform: translate(-50%, -50%) scale(.6);
+            transform: translate(-50%, -50%) scale(.6)
+        }
+    }
+
+    @-webkit-keyframes rotator {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn)
+        }
+    }
+
+    @keyframes rotator {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+        }
+
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn)
+        }
+    }
+
+    @-webkit-keyframes dash {
+        to {
+            stroke-dashoffset: 0
+        }
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0
+        }
+    }
+
+    a {
+        color: var(--theme-link-color);
+        text-decoration: none;
+        -webkit-transition: color .3s;
+        transition: color .3s
+    }
+
+    .toctogglespan .toctogglelabel:active,
+    .toctogglespan .toctogglelabel:focus,
+    .toctogglespan .toctogglelabel:hover,
+    .wds-link:active,
+    .wds-link:focus,
+    .wds-link:hover,
+    a:active,
+    a:focus,
+    a:hover,
+    ul.gallery.mw-gallery-slideshow .gallerycarousel>div .mw-gallery-slideshow-caption a:active,
+    ul.gallery.mw-gallery-slideshow .gallerycarousel>div .mw-gallery-slideshow-caption a:focus,
+    ul.gallery.mw-gallery-slideshow .gallerycarousel>div .mw-gallery-slideshow-caption a:hover,
+    ul.gallery.mw-gallery-slideshow li.gallerybox .gallerytext a:active,
+    ul.gallery.mw-gallery-slideshow li.gallerybox .gallerytext a:focus,
+    ul.gallery.mw-gallery-slideshow li.gallerybox .gallerytext a:hover {
+        color: var(--theme-link-color--hover)
+    }
+
+    @font-face {
+        font-family: Rubik;
+        font-style: italic;
+        font-weight: 700;
+        src: local("Rubik Bold Italic"), local("Rubik-BoldItalic");
+        unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+    }
+
+    @font-face {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 400;
+        src: local("Rubik"), local("Rubik-Regular"), url(data:font/woff2;base64,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)format("woff2");
+        unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+    }
+
+    @font-face {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 700;
+        src: local("Rubik Bold"), local("Rubik-Bold"), url(data:font/woff2;base64,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)format("woff2");
+        unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+    }
+
+    body {
+        background-color: var(--theme-body-background-color);
+        font-size: 14px;
+        line-height: 1.75
+    }
+
+    body.skin-fandomdesktop {
+        font-family: rubik, helvetica, arial, sans-serif
+    }
+
+    a {
+        line-height: inherit
+    }
+
+    a:active,
+    a:focus,
+    a:hover {
+        text-decoration: underline
+    }
+
+    .main-container {
+        margin-left: 66px;
+        min-width: 702px;
+        width: calc(100% - 66px)
+    }
+
+    .main-container,
+    .resizable-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        display: -webkit-box;
+        display: flex;
+        flex-direction: column
+    }
+
+    .resizable-container {
+        margin: 0 auto 48px;
+        max-width: 1236px;
+        -webkit-transition: width .3s, max-width .3s;
+        transition: width .3s, max-width .3s;
+        width: 85%
+    }
+
+    @media only screen and (max-width:1279px) {
+        .resizable-container {
+            max-width: none;
+            width: 95%
+        }
+    }
+
+    .page {
+        --fixed-table-header-offset: 0
+    }
+
+    .page {
+        color: var(--theme-page-text-color);
+        margin-top: 12px;
+        position: relative
+    }
+
+    html:not(.ve-activated) .page.has-right-rail {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) -webkit-min-content;
+        grid-template-columns: minmax(0, 1fr) min-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content
+    }
+
+    html:not(.ve-activated) .page.has-right-rail .page__main {
+        border-radius: 3px 0 0 3px
+    }
+
+    @media only screen and (max-width:1023px) {
+        html:not(.ve-activated) .page.has-right-rail {
+            grid-template-columns: 100%
+        }
+
+        html:not(.ve-activated) .page.has-right-rail .page__main {
+            border-radius: 3px 3px 0 0
+        }
+    }
+
+    .page__main {
+        background-color: var(--theme-page-background-color);
+        border-radius: 3px;
+        min-height: 480px;
+        padding: 24px 36px;
+        position: relative
+    }
+
+    .page-side-tools {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 58px
+    }
+
+    .page-side-tools__wrapper {
+        height: 100%;
+        left: 0;
+        padding-bottom: 430px;
+        position: absolute;
+        top: 18px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 200
+    }
+
+    @media only screen and (max-width:1279px) {
+        .page-side-tools__wrapper {
+            -webkit-transform: translateX(-25%);
+            transform: translateX(-25%)
+        }
+    }
+
+    @media only screen and (min-width:1500px) {
+        .page-content {
+            font-size: 16px
+        }
+    }
+
+    .page-content p {
+        font-size: inherit;
+        font-weight: 400;
+        line-height: 1.75;
+        overflow-wrap: break-word
+    }
+
+    .page-content dt {
+        font-weight: 700
+    }
+
+    @supports ((mask:url(https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED)) or (-webkit-mask:url(https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED))) {
+        .sound-playing>.sound-title::after {
+            background: #80B640;
+            -webkit-mask: var(--sf-img-5);
+            -webkit-mask-size: contain;
+            mask: var(--sf-img-5);
+            mask-size: contain
+        }
+    }
+
+    @keyframes mw-spinner {
+        0% {
+            opacity: 1
+        }
+
+        100% {
+            opacity: 0
+        }
+    }
+</style>
+<meta name=ResourceLoaderDynamicStyles content>
+<style>
+    .sprite {
+        display: inline-block;
+        vertical-align: text-top;
+        background-repeat: no-repeat
+    }
+
+    .nbt-sprite {
+        background-image: url(Nbtsheet.png)
+    }
+
+    .nowrap {
+        white-space: nowrap
+    }
+
+    body {
+        overflow-wrap: break-word
+    }
+
+    :root {
+        --custom-background-blue: hsl(215, 75%, 92%);
+        --custom-background-cyan: #cef;
+        --custom-background-green: #cfc;
+        --custom-background-gray: #eee;
+        --custom-background-grey: var(--custom-background-gray);
+        --custom-background-magenta: #fdf;
+        --custom-background-orange: #fdb;
+        --custom-background-purple: #ecf;
+        --custom-background-red: #fcc;
+        --custom-background-yellow: #ffc;
+        --custom-border-blue: #36c;
+        --custom-border-cyan: #9df;
+        --custom-border-green: #5d5;
+        --custom-border-gray: #eee;
+        --custom-border-grey: var(--custom-border-gray);
+        --custom-border-magenta: #f9f;
+        --custom-border-orange: #f90;
+        --custom-border-purple: #96c;
+        --custom-border-red: #e44;
+        --custom-border-yellow: #fc3;
+        --custom-closed-topic-neutral: #eef;
+        --custom-closed-topic-no: #fee;
+        --custom-closed-topic-yes: #efe;
+        --custom-documentation: #eaf4f9;
+        --custom-documentation-baddoc: #f9f2ea;
+        --custom-documentation-nodoc: #f9eaea;
+        --custom-main-page-background: #fcfcfc;
+        --custom-main-page-border: #ccc;
+        --custom-main-page-edition-subheader: #333;
+        --custom-mcwiki-header-color: #bcd4f5;
+        --custom-navbox-background: #fff;
+        --custom-navbox-top: #ccc;
+        --custom-navbox-middle: #ddd;
+        --custom-navbox-thru: #eee;
+        --custom-nbt-inherit-color: #e6e6fa;
+        --custom-table-background: #f8f9fa;
+        --custom-table-alternate-background: #f0f1f2;
+        --custom-table-choice-always: #004100;
+        --custom-table-choice-always-background: #5dcc5d;
+        --custom-table-choice-default: #fff;
+        --custom-table-choice-in-off-background: #060;
+        --custom-table-choice-in-on-background: #0c0;
+        --custom-table-choice-na: #000;
+        --custom-table-choice-neutral: #9c6500;
+        --custom-table-choice-neutral-background: #ffeb9c;
+        --custom-table-choice-never: #700005;
+        --custom-table-choice-never-background: #ff5757;
+        --custom-table-choice-no: #9c0006;
+        --custom-table-choice-no-background: #ffc7ce;
+        --custom-table-choice-out-off-background: #900;
+        --custom-table-choice-out-on-background: #f00;
+        --custom-table-choice-partial: #8a7600;
+        --custom-table-choice-partial-background: #ffd;
+        --custom-table-choice-planned: #0131b7;
+        --custom-table-choice-planned-background: #dfdfff;
+        --custom-table-choice-rarely: #835400;
+        --custom-table-choice-rarely-background: #fdce5e;
+        --custom-table-choice-unknown: #222;
+        --custom-table-choice-unknown-background: #ccc;
+        --custom-table-choice-yes: #006100;
+        --custom-table-choice-yes-background: #c6efce;
+        --custom-table-header-background: #eaecf0;
+        --custom-topic-30-days: #bbb;
+        --custom-topic-7-days: #ddd
+    }
+
+    @supports (flex-wrap:wrap) {
+        .edition-group {
+            display: flex;
+            flex-wrap: wrap
+        }
+
+        .edition-group .edition-box {
+            flex: 17.4em
+        }
+    }
+
+    @-webkit-keyframes layered-blueprint-fade-in {
+        0% {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        100% {
+            opacity: 1;
+            visibility: visible
+        }
+    }
+
+    @keyframes layered-blueprint-fade-in {
+        0% {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        100% {
+            opacity: 1;
+            visibility: visible
+        }
+    }
+
+    @-webkit-keyframes layered-blueprint-fade-out {
+        0% {
+            opacity: 1;
+            visibility: visible
+        }
+
+        100% {
+            opacity: 0;
+            visibility: hidden
+        }
+    }
+
+    @keyframes layered-blueprint-fade-out {
+        0% {
+            opacity: 1;
+            visibility: visible
+        }
+
+        100% {
+            opacity: 0;
+            visibility: hidden
+        }
+    }
+
+    .treeview {
+        margin-top: 0.3em
+    }
+
+    .treeview .treeview-header {
+        padding-left: 3px;
+        font-weight: bold
+    }
+
+    .treeview .treeview-header:last-child {
+        border-color: #636363 !important;
+        border-left-style: dotted
+    }
+
+    .treeview .treeview-header:not(:last-child)::before {
+        content: none
+    }
+
+    .treeview .treeview-header:last-child::before {
+        border-bottom: 0
+    }
+
+    .treeview ul,
+    .treeview li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        list-style-image: none
+    }
+
+    .treeview li li {
+        position: relative;
+        padding-left: 13px;
+        margin-left: 7px;
+        border-left: 1px solid #636363
+    }
+
+    .treeview li li::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: 11px;
+        height: 11px;
+        border-bottom: 1px solid #636363
+    }
+
+    .treeview li li:last-child:not(.treeview-continue) {
+        border-color: transparent
+    }
+
+    .treeview li li:last-child:not(.treeview-continue)::before {
+        border-left: 1px solid #636363;
+        width: 10px
+    }
+
+    .nbttree-inherited {
+        background-color: var(--custom-nbt-inherit-color)
+    }
+
+    .jslink {
+        color: var(--theme-link-color);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .jslink:hover {
+        text-decoration: underline;
+        cursor: pointer
+    }
+
+    .jslink:active {
+        color: var(--theme-link-color--hover)
+    }
+
+    .sprite {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor
+    }
+
+    body {
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4
+    }
+
+    samp {
+        font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace, Courier
+    }
+
+    code {
+        display: inline-block
+    }
+
+    .page-content dl {
+        margin: 0
+    }
+
+    .page-content .mw-parser-output a {
+        font-weight: inherit
+    }
+
+    .skin-fandomdesktop {
+        background-image: url(data:,)
+    }
+
+    #mw-content-text code {
+        background-color: var(--custom-table-background);
+        border: 1px solid var(--theme-border-color);
+        border-radius: 2px;
+        padding: 1px 4px
+    }
+
+    #mw-content-text p {
+        margin: 0 0 0.6em
+    }
+</style>
+<meta name=generator content="MediaWiki 1.37.6">
+<meta name=format-detection content="telephone=no">
+<meta property=og:type content=article>
+<meta property=og:site_name content="Minecraft Wiki">
+<meta property=og:title content=展示实体/ED>
+<meta property=og:url content=https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED>
+<meta property=og:description content="物品展示实体： 方块展示实体： 文本展示实体：">
+<meta property=og:image
+    content="https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/e/e6/Site-logo.png/revision/latest?cb=20211229054835">
+<meta name=twitter:card content=summary>
+<meta name=twitter:site content=@getfandom>
+<meta name=twitter:url content=https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED>
+<meta name=twitter:title content="展示实体/ED - Minecraft Wiki，最详细的我的世界百科">
+<meta name=twitter:description content="物品展示实体： 方块展示实体： 文本展示实体：">
+<meta name=description content="物品展示实体： 方块展示实体： 文本展示实体：">
+<meta name=viewport
+    content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0">
+<style>
+    :root {
+        --theme-body-dynamic-color-1: #fff;
+        --theme-body-dynamic-color-1--rgb: 255, 255, 255;
+        --theme-body-dynamic-color-2: #e6e6e6;
+        --theme-body-dynamic-color-2--rgb: 230, 230, 230;
+        --theme-page-dynamic-color-1: #000;
+        --theme-page-dynamic-color-1--rgb: 0, 0, 0;
+        --theme-page-dynamic-color-1--inverted: #fff;
+        --theme-page-dynamic-color-1--inverted--rgb: 255, 255, 255;
+        --theme-page-dynamic-color-2: #3a3a3a;
+        --theme-page-dynamic-color-2--rgb: 58, 58, 58;
+        --theme-sticky-nav-dynamic-color-1: #000;
+        --theme-sticky-nav-dynamic-color-1--rgb: 0, 0, 0;
+        --theme-sticky-nav-dynamic-color-2: #3a3a3a;
+        --theme-sticky-nav-dynamic-color-2--rgb: 58, 58, 58;
+        --theme-link-dynamic-color-1: #fff;
+        --theme-link-dynamic-color-1--rgb: 255, 255, 255;
+        --theme-link-dynamic-color-2: #e6e6e6;
+        --theme-link-dynamic-color-2--rgb: 230, 230, 230;
+        --theme-accent-dynamic-color-1: #fff;
+        --theme-accent-dynamic-color-1--rgb: 255, 255, 255;
+        --theme-accent-dynamic-color-2: #e6e6e6;
+        --theme-accent-dynamic-color-2--rgb: 230, 230, 230;
+        --theme-body-background-color: #202020;
+        --theme-body-background-color--rgb: 32, 32, 32;
+        --theme-body-background-image: url(data:,);
+        --theme-body-text-color: #fff;
+        --theme-body-text-color--rgb: 255, 255, 255;
+        --theme-body-text-color--hover: #cccccc;
+        --theme-sticky-nav-background-color: #aaccee;
+        --theme-sticky-nav-background-color--rgb: 170, 204, 238;
+        --theme-sticky-nav-text-color: #000;
+        --theme-sticky-nav-text-color--hover: #333333;
+        --theme-page-background-color: #e6eff4;
+        --theme-page-background-color--rgb: 230, 239, 244;
+        --theme-page-background-color--secondary: #dbe3e8;
+        --theme-page-background-color--secondary--rgb: 219, 227, 232;
+        --theme-page-text-color: #3a3a3a;
+        --theme-page-text-color--rgb: 58, 58, 58;
+        --theme-page-text-color--hover: #6d6d6d;
+        --theme-page-text-mix-color: #909597;
+        --theme-page-text-mix-color-95: #dde6eb;
+        --theme-page-accent-mix-color: #8dabe0;
+        --theme-page-headings-font: "Rubik";
+        --theme-link-color: #0750c5;
+        --theme-link-color--rgb: 7, 80, 197;
+        --theme-link-color--hover: #032862;
+        --theme-link-label-color: #fff;
+        --theme-accent-color: #3366cc;
+        --theme-accent-color--rgb: 51, 102, 204;
+        --theme-accent-color--hover: #84a3e0;
+        --theme-accent-label-color: #fff;
+        --theme-border-color: #bbc2c6;
+        --theme-border-color--rgb: 187, 194, 198;
+        --theme-alert-color: #bf0017;
+        --theme-alert-color--rgb: 191, 0, 23;
+        --theme-alert-color--hover: #59000a;
+        --theme-alert-color--secondary: #bf0017;
+        --theme-alert-label: #fff;
+        --theme-warning-color: #ca6f1b;
+        --theme-warning-color--rgb: 202, 111, 27;
+        --theme-warning-color--secondary: #bc6719;
+        --theme-warning-label: #000;
+        --theme-success-color: #0c742f;
+        --theme-success-color--rgb: 12, 116, 47;
+        --theme-success-color--secondary: #0c742f;
+        --theme-success-label: #fff;
+        --theme-message-color: #753369;
+        --theme-message-label: #fff;
+        --theme-community-header-color: #ffffff;
+        --theme-community-header-color--hover: #ffffff;
+        --theme-background-image-opacity: 100%;
+        --theme-page-text-opacity-factor: 0.85;
+        --theme-body-text-opacity-factor: 0.7;
+        --theme-link-decoration: none
+    }
+</style>
+<link rel=search type=application/opensearchdescription+xml href=https://minecraft.fandom.com/zh/opensearch_desc.php
+    title="Minecraft Wiki (zh)">
+<link rel=EditURI type=application/rsd+xml href="https://minecraft.fandom.com/zh/api.php?action=rsd">
+<link rel=alternate hreflang=zh
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh">
+<link rel=alternate hreflang=zh-Hans
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-hans">
+<link rel=alternate hreflang=zh-Hant
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-hant">
+<link rel=alternate hreflang=zh-Hans-CN
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-cn">
+<link rel=alternate hreflang=zh-Hant-HK
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-hk">
+<link rel=alternate hreflang=zh-Hant-MO
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-mo">
+<link rel=alternate hreflang=zh-Hans-MY
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-my">
+<link rel=alternate hreflang=zh-Hans-SG
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-sg">
+<link rel=alternate hreflang=zh-Hant-TW
+    href="https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED?variant=zh-tw">
+<link rel=license href=https://www.fandom.com/zh/licensing-zh>
+<link rel=canonical href=https://minecraft.fandom.com/zh/wiki/%E5%B1%95%E7%A4%BA%E5%AE%9E%E4%BD%93/ED>
+<meta property=fb:app_id content=112328095453510 prefix="fb: http://www.facebook.com/2008/fbml">
+<style id=lgqq1ilb.x8>
+    @supports (-ms-accelerator:true) {
+        .swal2-range input {
+            width: 100% !important
+        }
+
+        .swal2-range output {
+            display: none
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-show {
+        0% {
+            transform: translateY(-.625em) rotateZ(2deg)
+        }
+
+        33% {
+            transform: translateY(0) rotateZ(-2deg)
+        }
+
+        66% {
+            transform: translateY(.3125em) rotateZ(2deg)
+        }
+
+        100% {
+            transform: translateY(0) rotateZ(0)
+        }
+    }
+
+    @keyframes swal2-toast-show {
+        0% {
+            transform: translateY(-.625em) rotateZ(2deg)
+        }
+
+        33% {
+            transform: translateY(0) rotateZ(-2deg)
+        }
+
+        66% {
+            transform: translateY(.3125em) rotateZ(2deg)
+        }
+
+        100% {
+            transform: translateY(0) rotateZ(0)
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-hide {
+        100% {
+            transform: rotateZ(1deg);
+            opacity: 0
+        }
+    }
+
+    @keyframes swal2-toast-hide {
+        100% {
+            transform: rotateZ(1deg);
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-animate-success-line-tip {
+        0% {
+            top: .5625em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: .125em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: .625em;
+            left: -.25em;
+            width: 1.625em
+        }
+
+        84% {
+            top: 1.0625em;
+            left: .75em;
+            width: .5em
+        }
+
+        100% {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+    }
+
+    @keyframes swal2-toast-animate-success-line-tip {
+        0% {
+            top: .5625em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: .125em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: .625em;
+            left: -.25em;
+            width: 1.625em
+        }
+
+        84% {
+            top: 1.0625em;
+            left: .75em;
+            width: .5em
+        }
+
+        100% {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-animate-success-line-long {
+        0% {
+            top: 1.625em;
+            right: 1.375em;
+            width: 0
+        }
+
+        65% {
+            top: 1.25em;
+            right: .9375em;
+            width: 0
+        }
+
+        84% {
+            top: .9375em;
+            right: 0;
+            width: 1.125em
+        }
+
+        100% {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+    }
+
+    @keyframes swal2-toast-animate-success-line-long {
+        0% {
+            top: 1.625em;
+            right: 1.375em;
+            width: 0
+        }
+
+        65% {
+            top: 1.25em;
+            right: .9375em;
+            width: 0
+        }
+
+        84% {
+            top: .9375em;
+            right: 0;
+            width: 1.125em
+        }
+
+        100% {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+    }
+
+    @-webkit-keyframes swal2-show {
+        0% {
+            transform: scale(.7)
+        }
+
+        45% {
+            transform: scale(1.05)
+        }
+
+        80% {
+            transform: scale(.95)
+        }
+
+        100% {
+            transform: scale(1)
+        }
+    }
+
+    @keyframes swal2-show {
+        0% {
+            transform: scale(.7)
+        }
+
+        45% {
+            transform: scale(1.05)
+        }
+
+        80% {
+            transform: scale(.95)
+        }
+
+        100% {
+            transform: scale(1)
+        }
+    }
+
+    @-webkit-keyframes swal2-hide {
+        0% {
+            transform: scale(1);
+            opacity: 1
+        }
+
+        100% {
+            transform: scale(.5);
+            opacity: 0
+        }
+    }
+
+    @keyframes swal2-hide {
+        0% {
+            transform: scale(1);
+            opacity: 1
+        }
+
+        100% {
+            transform: scale(.5);
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-success-line-tip {
+        0% {
+            top: 1.1875em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: 1.0625em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: 2.1875em;
+            left: -.375em;
+            width: 3.125em
+        }
+
+        84% {
+            top: 3em;
+            left: 1.3125em;
+            width: 1.0625em
+        }
+
+        100% {
+            top: 2.8125em;
+            left: .8125em;
+            width: 1.5625em
+        }
+    }
+
+    @keyframes swal2-animate-success-line-tip {
+        0% {
+            top: 1.1875em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: 1.0625em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: 2.1875em;
+            left: -.375em;
+            width: 3.125em
+        }
+
+        84% {
+            top: 3em;
+            left: 1.3125em;
+            width: 1.0625em
+        }
+
+        100% {
+            top: 2.8125em;
+            left: .8125em;
+            width: 1.5625em
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-success-line-long {
+        0% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        65% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        84% {
+            top: 2.1875em;
+            right: 0;
+            width: 3.4375em
+        }
+
+        100% {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em
+        }
+    }
+
+    @keyframes swal2-animate-success-line-long {
+        0% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        65% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        84% {
+            top: 2.1875em;
+            right: 0;
+            width: 3.4375em
+        }
+
+        100% {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em
+        }
+    }
+
+    @-webkit-keyframes swal2-rotate-success-circular-line {
+        0% {
+            transform: rotate(-45deg)
+        }
+
+        5% {
+            transform: rotate(-45deg)
+        }
+
+        12% {
+            transform: rotate(-405deg)
+        }
+
+        100% {
+            transform: rotate(-405deg)
+        }
+    }
+
+    @keyframes swal2-rotate-success-circular-line {
+        0% {
+            transform: rotate(-45deg)
+        }
+
+        5% {
+            transform: rotate(-45deg)
+        }
+
+        12% {
+            transform: rotate(-405deg)
+        }
+
+        100% {
+            transform: rotate(-405deg)
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-error-x-mark {
+        0% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        50% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        80% {
+            margin-top: -.375em;
+            transform: scale(1.15)
+        }
+
+        100% {
+            margin-top: 0;
+            transform: scale(1);
+            opacity: 1
+        }
+    }
+
+    @keyframes swal2-animate-error-x-mark {
+        0% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        50% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        80% {
+            margin-top: -.375em;
+            transform: scale(1.15)
+        }
+
+        100% {
+            margin-top: 0;
+            transform: scale(1);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-error-icon {
+        0% {
+            transform: rotateX(100deg);
+            opacity: 0
+        }
+
+        100% {
+            transform: rotateX(0);
+            opacity: 1
+        }
+    }
+
+    @keyframes swal2-animate-error-icon {
+        0% {
+            transform: rotateX(100deg);
+            opacity: 0
+        }
+
+        100% {
+            transform: rotateX(0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes swal2-rotate-loading {
+        0% {
+            transform: rotate(0)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    @keyframes swal2-rotate-loading {
+        0% {
+            transform: rotate(0)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    @keyframes fade-in {
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade-in {
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade-in {
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade-in {
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade-in {
+        to {
+            opacity: 1
+        }
+    }
+
+    @supports (-ms-accelerator:true) {
+        .swal2-range input {
+            width: 100% !important
+        }
+
+        .swal2-range output {
+            display: none
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-show {
+        0% {
+            transform: translateY(-.625em) rotateZ(2deg)
+        }
+
+        33% {
+            transform: translateY(0) rotateZ(-2deg)
+        }
+
+        66% {
+            transform: translateY(.3125em) rotateZ(2deg)
+        }
+
+        100% {
+            transform: translateY(0) rotateZ(0)
+        }
+    }
+
+    @keyframes swal2-toast-show {
+        0% {
+            transform: translateY(-.625em) rotateZ(2deg)
+        }
+
+        33% {
+            transform: translateY(0) rotateZ(-2deg)
+        }
+
+        66% {
+            transform: translateY(.3125em) rotateZ(2deg)
+        }
+
+        100% {
+            transform: translateY(0) rotateZ(0)
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-hide {
+        100% {
+            transform: rotateZ(1deg);
+            opacity: 0
+        }
+    }
+
+    @keyframes swal2-toast-hide {
+        100% {
+            transform: rotateZ(1deg);
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-animate-success-line-tip {
+        0% {
+            top: .5625em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: .125em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: .625em;
+            left: -.25em;
+            width: 1.625em
+        }
+
+        84% {
+            top: 1.0625em;
+            left: .75em;
+            width: .5em
+        }
+
+        100% {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+    }
+
+    @keyframes swal2-toast-animate-success-line-tip {
+        0% {
+            top: .5625em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: .125em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: .625em;
+            left: -.25em;
+            width: 1.625em
+        }
+
+        84% {
+            top: 1.0625em;
+            left: .75em;
+            width: .5em
+        }
+
+        100% {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+    }
+
+    @-webkit-keyframes swal2-toast-animate-success-line-long {
+        0% {
+            top: 1.625em;
+            right: 1.375em;
+            width: 0
+        }
+
+        65% {
+            top: 1.25em;
+            right: .9375em;
+            width: 0
+        }
+
+        84% {
+            top: .9375em;
+            right: 0;
+            width: 1.125em
+        }
+
+        100% {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+    }
+
+    @keyframes swal2-toast-animate-success-line-long {
+        0% {
+            top: 1.625em;
+            right: 1.375em;
+            width: 0
+        }
+
+        65% {
+            top: 1.25em;
+            right: .9375em;
+            width: 0
+        }
+
+        84% {
+            top: .9375em;
+            right: 0;
+            width: 1.125em
+        }
+
+        100% {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+    }
+
+    @-webkit-keyframes swal2-show {
+        0% {
+            transform: scale(.7)
+        }
+
+        45% {
+            transform: scale(1.05)
+        }
+
+        80% {
+            transform: scale(.95)
+        }
+
+        100% {
+            transform: scale(1)
+        }
+    }
+
+    @keyframes swal2-show {
+        0% {
+            transform: scale(.7)
+        }
+
+        45% {
+            transform: scale(1.05)
+        }
+
+        80% {
+            transform: scale(.95)
+        }
+
+        100% {
+            transform: scale(1)
+        }
+    }
+
+    @-webkit-keyframes swal2-hide {
+        0% {
+            transform: scale(1);
+            opacity: 1
+        }
+
+        100% {
+            transform: scale(.5);
+            opacity: 0
+        }
+    }
+
+    @keyframes swal2-hide {
+        0% {
+            transform: scale(1);
+            opacity: 1
+        }
+
+        100% {
+            transform: scale(.5);
+            opacity: 0
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-success-line-tip {
+        0% {
+            top: 1.1875em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: 1.0625em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: 2.1875em;
+            left: -.375em;
+            width: 3.125em
+        }
+
+        84% {
+            top: 3em;
+            left: 1.3125em;
+            width: 1.0625em
+        }
+
+        100% {
+            top: 2.8125em;
+            left: .8125em;
+            width: 1.5625em
+        }
+    }
+
+    @keyframes swal2-animate-success-line-tip {
+        0% {
+            top: 1.1875em;
+            left: .0625em;
+            width: 0
+        }
+
+        54% {
+            top: 1.0625em;
+            left: .125em;
+            width: 0
+        }
+
+        70% {
+            top: 2.1875em;
+            left: -.375em;
+            width: 3.125em
+        }
+
+        84% {
+            top: 3em;
+            left: 1.3125em;
+            width: 1.0625em
+        }
+
+        100% {
+            top: 2.8125em;
+            left: .8125em;
+            width: 1.5625em
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-success-line-long {
+        0% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        65% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        84% {
+            top: 2.1875em;
+            right: 0;
+            width: 3.4375em
+        }
+
+        100% {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em
+        }
+    }
+
+    @keyframes swal2-animate-success-line-long {
+        0% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        65% {
+            top: 3.375em;
+            right: 2.875em;
+            width: 0
+        }
+
+        84% {
+            top: 2.1875em;
+            right: 0;
+            width: 3.4375em
+        }
+
+        100% {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em
+        }
+    }
+
+    @-webkit-keyframes swal2-rotate-success-circular-line {
+        0% {
+            transform: rotate(-45deg)
+        }
+
+        5% {
+            transform: rotate(-45deg)
+        }
+
+        12% {
+            transform: rotate(-405deg)
+        }
+
+        100% {
+            transform: rotate(-405deg)
+        }
+    }
+
+    @keyframes swal2-rotate-success-circular-line {
+        0% {
+            transform: rotate(-45deg)
+        }
+
+        5% {
+            transform: rotate(-45deg)
+        }
+
+        12% {
+            transform: rotate(-405deg)
+        }
+
+        100% {
+            transform: rotate(-405deg)
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-error-x-mark {
+        0% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        50% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        80% {
+            margin-top: -.375em;
+            transform: scale(1.15)
+        }
+
+        100% {
+            margin-top: 0;
+            transform: scale(1);
+            opacity: 1
+        }
+    }
+
+    @keyframes swal2-animate-error-x-mark {
+        0% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        50% {
+            margin-top: 1.625em;
+            transform: scale(.4);
+            opacity: 0
+        }
+
+        80% {
+            margin-top: -.375em;
+            transform: scale(1.15)
+        }
+
+        100% {
+            margin-top: 0;
+            transform: scale(1);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes swal2-animate-error-icon {
+        0% {
+            transform: rotateX(100deg);
+            opacity: 0
+        }
+
+        100% {
+            transform: rotateX(0);
+            opacity: 1
+        }
+    }
+
+    @keyframes swal2-animate-error-icon {
+        0% {
+            transform: rotateX(100deg);
+            opacity: 0
+        }
+
+        100% {
+            transform: rotateX(0);
+            opacity: 1
+        }
+    }
+
+    @-webkit-keyframes swal2-rotate-loading {
+        0% {
+            transform: rotate(0)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    @keyframes swal2-rotate-loading {
+        0% {
+            transform: rotate(0)
+        }
+
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    @keyframes hover-color {
+        from {
+            border-color: #e2e2e2
+        }
+
+        to {
+            border-color: #3e97eb
+        }
+    }
+</style>
+<meta itemprop=name content="Wiki Targeted (Entertainment)" class=sf-hidden>
+<meta itemprop=duration content=PT03M16S class=sf-hidden>
+<meta itemprop=description content class=sf-hidden>
+<meta itemprop=thumbnailUrl content="https://cdn.jwplayer.com/v2/media/HJaNsYXE/poster.jpg?width=720" class=sf-hidden>
+<meta itemprop=contentURL content=https://cdn.jwplayer.com/videos/HJaNsYXE-cSpmBcaY.mp4 class=sf-hidden>
+<meta itemprop=uploadDate content=2023-04-05T22:06:34+00:00 class=sf-hidden>
+<link rel="shortcut icon"
+    href="data:image/x-icon;base64,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">
+<style>
+    .sf-hidden {
+        display: none !important
+    }
+</style>
+<meta http-equiv=content-security-policy
+    content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
+<style>
+    img[src="data:,"],
+    source[src="data:,"] {
+        display: none !important
+    }
+</style>
+</head>
+
+<body
+    class="is-gamepedia mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-展示实体_ED rootpage-展示实体 skin-fandomdesktop action-view ooui-theme-fandomooui theme-fandomdesktop-light no-featured-video bab-detected">
+
+    <div class=main-container>
+
+
+
+        <div class=resizable-container>
+
+            <div class="page has-right-rail">
+                <main class=page__main lang=zh-Hans-CN>
+                    <div class=page-side-tools__wrapper>
+                        <div class=page-side-tools>
+
+
+                        </div>
+                    </div>
+
+
+                    <div id=content class=page-content>
+
+                        <div itemprop=video itemscope itemtype=http://schema.org/VideoObject>
+
+
+
+
+
+
+
+                        </div>
+                        <div id=mw-content-text class="mw-body-content mw-content-ltr" lang=zh-Hans-CN dir=ltr>
+                            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6XD44P" height="0"
+                                    width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                            <div class=mw-parser-output>
+                                <p style="font-size: 20px;">物品展示实体：
+                                </p>
+                                <div class=treeview>
+                                    <ul>
+                                        <li><span title=TAG_Compound><span class="sprite nbt-sprite"
+                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+                                            根标签
+                                            <ul>
+                                                <li class="mw-empty-elt sf-hidden">
+                                                <li class="treeview-header nbttree-inherited load-page pageloader-contentloaded"
+                                                    data-page="Template:Nbt inherit/entity/template" data-template=true
+                                                    data-treeview=true data-treeviewclass=nbttree-inherited>
+                                                    实体共通标签
+                                                <li class=nbttree-inherited><span title=TAG_Short><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Air</span>：当前实体所剩的空气值。在空气中充满至300，折算为生物淹没在水中15秒后生物才开始窒息，如该实体生命值为20点，那么实体在35秒后才会死亡。如果此项小于等于0时实体在水中，那么其每秒会受到1点伤害。
+                                                <li class=nbttree-inherited><span title=TAG_String><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;CustomName</span>：当前实体的自定义名称的<a
+                                                        href=https://minecraft.fandom.com/zh/wiki/JSON%E6%96%87%E6%9C%AC
+                                                        class=mw-redirect
+                                                        title=JSON文本>JSON文本</a>。会出现在玩家的死亡信息与村民的交易界面，以及玩家的光标指向的实体的上方。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;CustomNameVisible</span>：如果为<samp>true</samp>且实体拥有自定义名称，那么名称会总是显示在它们上方，而不受光标指向的影响。若实体并没有自定义名称，显示的则是默认的名称。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_Float><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;FallDistance</span>：当前实体已经坠落的距离。值越大，实体落地时对其造成伤害更多。
+                                                <li class=nbttree-inherited><span title=TAG_Short><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-16px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Fire</span>：距离火熄灭剩余的时间刻数。负值表示当前实体能够在火中站立而不着火的时间，未着火时默认为-20。
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Glowing</span>：表示实体是否有发光的轮廓线。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;HasVisualFire</span>：如果为<samp>true</samp>，那么实体会看起来已着火，但实际上可能未着火。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Invulnerable</span>：如果为<samp>true</samp>，那么当前实体不会受到除虚空伤害外的任何伤害，但这些实体仍然会被处于创造模式的玩家伤害到。此项对于生物与非生物实体的作用是类似的：生物不会受到任何来源（包括药水）的伤害，无法被钓鱼竿、攻击、爆炸或者抛射物推动；除支持物被移除外，诸如载具的物件都不会被摧毁。
+                                                <li class=nbttree-inherited><span title=TAG_List><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Motion</span>：当前实体的速度，单位是米/每<a
+                                                        href=https://minecraft.fandom.com/zh/wiki/%E5%88%BB
+                                                        title=刻>刻</a>。
+                                                    <ul>
+                                                        <li><span title=TAG_Double><span class="sprite nbt-sprite"
+                                                                    style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：X轴速度分量。
+                                                        </li>
+                                                        <li><span title=TAG_Double><span class="sprite nbt-sprite"
+                                                                    style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：Y轴速度分量。
+                                                        </li>
+                                                        <li><span title=TAG_Double><span class="sprite nbt-sprite"
+                                                                    style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：Z轴速度分量。
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;NoGravity</span>：如果为<samp>true</samp>，实体在空中不会坠落，在盔甲架上的效果却是使<span
+                                                        title=TAG_List><span class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Motion</span>标签将失去效果。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;OnGround</span>：表示实体是否正在接触地面。
+                                                <li class=nbttree-inherited><span title=TAG_List><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Passengers</span>：正在骑乘当前实体的实体的数据。两个实体都能控制移动，被刷怪笼召唤时生成条件由最上方的实体决定。
+                                                    <ul>
+                                                        <li><span title=TAG_Compound><span class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>：一个乘客。
+                                                            <ul>
+                                                                <li>详见<a href=https://minecraft.fandom.com/zh/wiki/%E5%AE%9E%E4%BD%93%E6%A0%BC%E5%BC%8F
+                                                                        title=实体格式>实体格式</a>。
+                                                            </ul>
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;PortalCooldown</span>：距离当前实体可以再次穿过下界传送门向回传送的时间刻数。在初次传送后，起始值为300刻（15秒）并逐渐倒计时至0。
+                                                <li class=nbttree-inherited><span title=TAG_List><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap style=font-weight:bold>&nbsp;Pos</span>：当前实体的坐标。
+                                                    <ul>
+                                                        <li><span title=TAG_Double><span class="sprite nbt-sprite"
+                                                                    style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：X轴坐标。
+                                                        </li>
+                                                        <li><span title=TAG_Double><span class="sprite nbt-sprite"
+                                                                    style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：Y轴坐标。
+                                                        </li>
+                                                        <li><span title=TAG_Double><span class="sprite nbt-sprite"
+                                                                    style="background-position:-16px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：Z轴坐标。
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_List><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Rotation</span>：实体的旋转角度。
+                                                    <ul>
+                                                        <li><span title=TAG_Float><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：当前实体以Y轴为中心，俯视时顺时针的角度（即偏转角）。正南方为0。不会超过360度。
+                                                        </li>
+                                                        <li><span title=TAG_Float><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：当前实体与水平面之间的倾斜角（即俯仰角）。水平面为0，正值表示面朝下方，相反则为上方。不超过正负90度。
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_Boolean><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;Silent</span>：表示当前实体是否不会发出任何声音。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_List><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap style=font-weight:bold>&nbsp;Tags</span>：自定义的<a
+                                                        href=https://minecraft.fandom.com/zh/wiki/%E8%AE%B0%E5%88%86%E6%9D%BF#%E6%A0%87%E7%AD%BE%E5%91%BD%E4%BB%A4
+                                                        title=记分板>记分板标签</a>数据。可能不存在。
+                                                    <ul>
+                                                        <li><span title=TAG_String><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span>：一项记分板标签。
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;TicksFrozen</span>：实体的冷冻时间，不小于0。当实体在<a
+                                                        href=https://minecraft.fandom.com/zh/wiki/%E7%BB%86%E9%9B%AA
+                                                        title=细雪>细雪</a>中时每刻增加1，离开细雪则每刻减少2。可能不存在。
+                                                <li class=nbttree-inherited><span title=TAG_Int_Array><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-16px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap style=font-weight:bold>&nbsp;UUID</span>：实体的<a
+                                                        href=https://minecraft.fandom.com/zh/wiki/UUID class=mw-redirect
+                                                        title=UUID>UUID</a>，用4个32位整数表示，按从高位到低位的顺序存储。</li>
+                                                <li class="mw-empty-elt sf-hidden">
+                                                <li class="treeview-header nbttree-inherited load-page pageloader-contentloaded"
+                                                    data-page=区块格式/展示实体 data-treeview=true
+                                                    data-treeviewclass=nbttree-inherited>展示实体共通标签
+                                                <li class=nbttree-inherited><span title=TAG_String><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;billboard</span>：展示实体模型根据玩家视角进行变换的行为。可以为<code>fixed</code>（垂直和水平角度都固定）、<code>vertical</code>（按照垂直轴旋转跟随玩家视角）、<code>horizontal</code>（按照水平轴旋转跟随玩家视角）和<code>center</code>（按照中心旋转跟随玩家视角）。
+                                                <li class=nbttree-inherited><span title=TAG_Compound><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;brightness</span>：覆盖展示实体渲染使用的亮度值，如果不存在则使用当前位置的亮度。默认不存在。
+                                                    <ul>
+                                                        <li><span title=TAG_Int><span class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;block</span>：渲染使用的方块光照等级，取值为0-15。
+                                                        </li>
+                                                        <li><span title=TAG_Int><span class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;sky</span>：渲染使用的天空光照等级，取值为0-15。
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;glow_color_override</span>：覆盖发光边框颜色，如果为-1则使用展示实体所在队伍的颜色。默认为-1。
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;height</span>：展示实体的最大高度，渲染超出高度的部分将被剔除。如果设置为0则不进行剔除。
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;interpolation_duration</span>：插值持续时长。
+                                                <li class=nbttree-inherited><span title=TAG_Float><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;shadow_radius</span>：（可插值）实体阴影半径，当值超过64时效果与64相同，小于等于0则不显示阴影。默认为1。
+                                                <li class=nbttree-inherited><span title=TAG_Float><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;shadow_strength</span>：（可插值）实体阴影强度，控制阴影的不透明度。默认为1。
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;start_interpolation</span>：插值开始时间，从客户端接收到这个数据更新后开始计时。此值无法通过<code
+                                                        class=nowrap>/<a href=https://minecraft.fandom.com/zh/wiki/%E5%91%BD%E4%BB%A4/data title=命令/data>data</a></code>获取，也不会作为实体数据保存。
+                                                <li class=nbttree-inherited><span title=TAG_List><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        title=TAG_Compound><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;transformation</span>：（可插值）展示实体模型的渲染变换，以实体所在位置为原点。游戏存档时只使用分解形式。在定义此标签时必须写入此标签内的所有标签，否则此标签无效。默认使用单位变换。
+                                                    <ul>
+                                                        <li>
+                                                            <dl>
+                                                                <dt>如果使用矩阵形式，此标签为含有16个元素的浮点数数组，描述一个行主序（Row-major）矩阵：
+                                                            </dl>
+                                                        </li>
+                                                        <li><span title=TAG_Float><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：矩阵中的一个值。其中第13、第14、第15个值对于变换没有任何效果；第16个值会将前12个值进行缩放，即将前12个数字除以此数字。
+                                                            <dl>
+                                                                <dt>如果使用分解形式，此标签为复合标签并带有下列所有标签，且各个标签按下方列出的顺序依次应用：
+                                                            </dl>
+                                                        </li>
+                                                        <li><span title=TAG_List><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                title=TAG_Compound><span class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;right_rotation</span>：初次<a
+                                                                href=https://zh.wikipedia.org/wiki/%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5#.E8.A7.92-.E8.BD.B4.E8.A1.A8.E7.A4.BA.E5.92.8C.E5.9B.9B.E5.85.83.E6.95.B0.E8.A1.A8.E7.A4.BA
+                                                                class=extiw
+                                                                title=wzh:旋转矩阵>旋转</a>模型。此标签对应矩阵形式中矩阵左上角的3x3矩阵<a
+                                                                href=https://zh.wikipedia.org/wiki/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3
+                                                                class=extiw
+                                                                title=wzh:奇异值分解>奇异值分解</a>后的右奇异向量矩阵。游戏存档时只使用四元数形式。
+                                                            <ul>
+                                                                <li>
+                                                                    <dl>
+                                                                        <dt>如果使用<a
+                                                                                href=https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%85%83%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E6%97%8B%E8%BD%AC
+                                                                                class=extiw
+                                                                                title=wzh:四元数与空间旋转>四元数</a>表示旋转（非单位四元数还会使模型缩放），此标签为含有4个元素的浮点数数组：
+                                                                    </dl>
+                                                                </li>
+                                                                <li><span title=TAG_Float><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：四元数中的一个元素。
+                                                                    <dl>
+                                                                        <dt>如果使用<a
+                                                                                href=https://zh.wikipedia.org/wiki/%E8%BD%B4%E8%A7%92
+                                                                                class=extiw
+                                                                                title=wzh:轴角>轴-角度形式</a>表示旋转，此标签为复合标签并带有下列所有标签：
+                                                                    </dl>
+                                                                </li>
+                                                                <li><span title=TAG_Float><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                        class=nowrap
+                                                                        style=font-weight:bold>&nbsp;angle</span>：绕旋转轴的旋转角度。
+                                                                </li>
+                                                                <li><span title=TAG_List><span class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                        class=nowrap
+                                                                        style=font-weight:bold>&nbsp;axis</span>：旋转轴向量。
+                                                                    <ul>
+                                                                        <li><span title=TAG_Float><span
+                                                                                    class="sprite nbt-sprite"
+                                                                                    style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：向量的一个分量。
+                                                                    </ul>
+                                                            </ul>
+                                                        </li>
+                                                        <li><span title=TAG_List><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;scale</span>：以原点为中心缩放模型。此标签对应矩阵形式中的矩阵左上角的3x3矩阵奇异值分解后的奇异值。此标签为含有3个元素的浮点数数组：
+                                                            <ul>
+                                                                <li><span title=TAG_Float><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：向量的一个分量。
+                                                            </ul>
+                                                        </li>
+                                                        <li><span title=TAG_List><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                title=TAG_Compound><span class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;left_rotation</span>：再次旋转模型。此标签对应矩阵形式中矩阵左上角的3x3矩阵奇异值分解后的左奇异向量矩阵。游戏存档时只使用四元数形式。
+                                                            <ul>
+                                                                <li>
+                                                                    <dl>
+                                                                        <dt>如果使用四元数表示旋转（非单位四元数还会使模型缩放），此标签为含有4个元素的浮点数数组：
+                                                                    </dl>
+                                                                </li>
+                                                                <li><span title=TAG_Float><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：四元数中的一个元素。
+                                                                    <dl>
+                                                                        <dt>如果使用轴-角度形式表示旋转，此标签为复合标签并带有下列所有标签：
+                                                                    </dl>
+                                                                </li>
+                                                                <li><span title=TAG_Float><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                        class=nowrap
+                                                                        style=font-weight:bold>&nbsp;angle</span>：绕旋转轴的旋转角度。
+                                                                </li>
+                                                                <li><span title=TAG_List><span class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                        class=nowrap
+                                                                        style=font-weight:bold>&nbsp;axis</span>：旋转轴向量。
+                                                                    <ul>
+                                                                        <li><span title=TAG_Float><span
+                                                                                    class="sprite nbt-sprite"
+                                                                                    style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：向量的一个分量。
+                                                                    </ul>
+                                                            </ul>
+                                                        </li>
+                                                        <li><span title=TAG_List><span class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;translation</span>：平移变换。此标签对应矩阵形式中的最后一列的前3个元素。此标签为含有3个元素的浮点数数组：
+                                                            <ul>
+                                                                <li><span title=TAG_Float><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span>：向量的一个分量。
+                                                            </ul>
+                                                    </ul>
+                                                <li class=nbttree-inherited><span title=TAG_Float><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-32px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;view_range</span>：实体最大可视范围。当玩家距离展示实体超过<code>&lt;<i>最大可视范围</i>&gt;×&lt;<i><a href=https://minecraft.fandom.com/zh/wiki/Options.txt#Java%E7%89%88 title=Options.txt>entityDistanceScaling</a></i>&gt;×64</code>时此实体不会进行渲染。默认为1。
+                                                <li class=nbttree-inherited><span title=TAG_Int><span
+                                                            class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;width</span>：展示实体的最大宽度，渲染超出宽度的部分将被剔除。如果设置为0则不进行剔除。
+                                                </li>
+                                                <li><span title=TAG_Compound><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap style=font-weight:bold>&nbsp;item</span>：要展示的物品。
+                                                    <ul>
+                                                        <li class="mw-empty-elt sf-hidden">
+                                                        <li class="treeview-header nbttree-inherited load-page pageloader-contentloaded"
+                                                            data-page="Template:Nbt inherit/itemnoslot/template"
+                                                            data-template=true data-treeview=true
+                                                            data-treeviewclass=nbttree-inherited>物品共通标签
+                                                        <li class=nbttree-inherited><span title=TAG_Byte><span
+                                                                    class="sprite nbt-sprite"
+                                                                    style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;Count</span>：堆叠在当前物品栏中的<a
+                                                                href=https://minecraft.fandom.com/zh/wiki/%E7%89%A9%E5%93%81
+                                                                title=物品>物品</a>数量。任何物品都能被堆叠，包括工具、盔甲、运输工具。范围从-128到127。数值为1时不被游戏显示。小于1的数值显示为红色。
+                                                        <li class=nbttree-inherited><span title=TAG_String><span
+                                                                    class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap style=font-weight:bold>&nbsp;id</span>：<a
+                                                                href=https://minecraft.fandom.com/zh/wiki/%E6%95%B0%E6%8D%AE%E5%80%BC
+                                                                class=mw-disambig
+                                                                title=数据值>物品/方块ID</a>。若未指定，游戏会在加载区块或者生成物品时将其变更为<a
+                                                                href=https://minecraft.fandom.com/zh/wiki/%E7%A9%BA%E6%B0%94
+                                                                title=空气>空气</a>。
+                                                        <li class=nbttree-inherited><span title=TAG_Compound><span
+                                                                    class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;tag</span>：关于当前物品的额外信息，详细内容请见<a
+                                                                href=https://minecraft.fandom.com/zh/wiki/Player.dat%E6%A0%BC%E5%BC%8F#%E7%89%A9%E5%93%81%E7%BB%93%E6%9E%84
+                                                                title=Player.dat格式>物品结构</a>章节。此标签对于多数物品来说都是非必须项。
+                                                    </ul>
+                                                </li>
+                                                <li><span title=TAG_String><span class="sprite nbt-sprite"
+                                                            style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;item_display</span>：物品展示实体的模式，用于再次变换物品模型。可以为<code>none</code>（不变换）、<code>thirdperson_lefthand</code>（第三人称视角左手变换）、<code>thirdperson_righthand</code>（第三人称视角右手变换）、<code>firstperson_lefthand</code>（第一人称视角左手变换）、<code>firstperson_righthand</code>（第一人称视角右手变换）、<code>head</code>（放置在头部物品栏的变换）、<code>gui</code>（在图形界面中的变换）、<code>ground</code>（平铺在地面的变换）和<code>fixed</code>（默认变换）。默认为<code>fixed</code>。
+                                            </ul>
+                                    </ul>
+                                </div>
+                                <p style="font-size: 20px;">方块展示实体：
+                                </p>
+                                <div class=treeview>
+                                    <ul>
+                                        <li><span title=TAG_Compound><span class="sprite nbt-sprite"
+                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+                                            根标签
+                                            <ul>
+                                                <li class="mw-empty-elt sf-hidden">
+                                                <li class="treeview-header nbttree-inherited load-page"
+                                                    data-page="Template:Nbt inherit/entity/template" data-template=true
+                                                    data-treeview=true data-treeviewclass=nbttree-inherited>
+                                                    实体共通标签[见上]
+                                                <li class="mw-empty-elt sf-hidden">
+                                                <li class="treeview-header nbttree-inherited load-page"
+                                                    data-page=区块格式/展示实体 data-treeview=true
+                                                    data-treeviewclass=nbttree-inherited>展示实体共通标签[见上]
+                                                <li><span title=TAG_Compound><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;block_state</span>：要展示的方块状态。
+                                                    <ul>
+                                                        <li class="mw-empty-elt sf-hidden">
+                                                        <li class="treeview-header nbttree-inherited load-page pageloader-contentloaded"
+                                                            data-page="Template:Nbt inherit/block_state/template"
+                                                            data-template=true data-treeview=true
+                                                            data-treeviewclass=nbttree-inherited>方块状态
+                                                        <li class=nbttree-inherited><span title=TAG_String><span
+                                                                    class="sprite nbt-sprite"
+                                                                    style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;Name</span>：方块的命名空间ID。
+                                                        <li class=nbttree-inherited><span title=TAG_Compound><span
+                                                                    class="sprite nbt-sprite"
+                                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                class=nowrap
+                                                                style=font-weight:bold>&nbsp;Properties</span>：（可选）方块属性。只能指定该方块所拥有的属性，否则对应属性不起效果。未指定的属性则设为默认值。
+                                                            <ul>
+                                                                <li><span title=TAG_String><span
+                                                                            class="sprite nbt-sprite"
+                                                                            style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                                        class=nowrap
+                                                                        style=font-weight:bold>&nbsp;&lt;<i>属性名</i>&gt;</span>：（可选）方块属性的键值对。
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                                </div>
+                                <p style="font-size: 20px;">文本展示实体：
+                                </p>
+                                <div class=treeview>
+                                    <ul>
+                                        <li><span title=TAG_Compound><span class="sprite nbt-sprite"
+                                                    style="background-position:-48px -16px;background-size:64px auto;height:16px;width:16px"></span></span>
+                                            根标签
+                                            <ul>
+                                                <li class="mw-empty-elt sf-hidden">
+                                                <li class="treeview-header nbttree-inherited load-page"
+                                                    data-page="Template:Nbt inherit/entity/template" data-template=true
+                                                    data-treeview=true data-treeviewclass=nbttree-inherited>
+                                                    实体共通标签[见上]
+                                                <li class="mw-empty-elt sf-hidden">
+                                                <li class="treeview-header nbttree-inherited load-page"
+                                                    data-page=区块格式/展示实体 data-treeview=true
+                                                    data-treeviewclass=nbttree-inherited>展示实体共通标签[见上]
+                                                <li><span title=TAG_String><span class="sprite nbt-sprite"
+                                                            style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;alignment</span>：文本对齐方向。可以为<code>center</code>（居中）、<code>left</code>（左对齐）和<code>right</code>（右对齐）。
+                                                </li>
+                                                <li><span title=TAG_Int><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;background</span>：（可插值）文本展示实体的背景颜色，各颜色通道按ARGB排列。由于在渲染时会自动丢弃Alpha通道小于0.1的片段，所以当A小于26（0x1A）时背景会变为完全透明。默认为1073741824（0x40000000）。
+                                                </li>
+                                                <li><span title=TAG_Boolean><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;default_background</span>：表示是否使用默认的文本背景，此项会覆盖<span
+                                                        title=TAG_Int><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;background</span>的更改。默认为<samp>false</samp>。
+                                                </li>
+                                                <li><span title=TAG_Int><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;line_width</span>：一行文本的最大宽度。如果展示文本超过了这个宽度会进行换行。默认为200。
+                                                </li>
+                                                <li><span title=TAG_Boolean><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;see_through</span>：表示此文本展示实体是否能穿过方块渲染。默认为<samp>false</samp>。
+                                                </li>
+                                                <li><span title=TAG_Boolean><span class="sprite nbt-sprite"
+                                                            style="background-position:-48px -32px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;shadow</span>：表示文本是否显示阴影。默认为<samp>false</samp>。
+                                                </li>
+                                                <li><span title=TAG_String><span class="sprite nbt-sprite"
+                                                            style="background-position:-32px -16px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;text</span>：要展示的文本，是一个<a
+                                                        href=https://minecraft.fandom.com/zh/wiki/%E5%8E%9F%E5%A7%8BJSON%E6%96%87%E6%9C%AC
+                                                        class=mw-redirect title=原始JSON文本>原始JSON文本</a>。</li>
+                                                <li><span title=TAG_Byte><span class="sprite nbt-sprite"
+                                                            style="background-position:-0px -0px;background-size:64px auto;height:16px;width:16px"></span></span><span
+                                                        class=nowrap
+                                                        style=font-weight:bold>&nbsp;text_opacity</span>：（可插值）文本透明度，取值为-128~127。由于Java中没有无符号整数，所以大于127的值需要用<code>&lt;<i>opacity</i>&gt;-256</code>进行替代。与背景颜色类似，当透明度小于26时渲染片段将直接丢弃，这时文本会完全透明而不可见。默认为-1，即透明度255，完全不透明。
+                                            </ul>
+                                    </ul>
+                                </div>
+                                <p style="font-size: 20px;text-align: center;"><a href="url" target="_blank">BY GNAHG</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
